@@ -18,7 +18,7 @@ public class Demo {
 
         int maxHeight = tempHeight>height3 ? tempHeight:height3;
 
-        System.out.println("三个人中身高最高的是max="+maxHeight);
+        System.out.println("三个人中身高最高的是:"+maxHeight);
 
     }
 
