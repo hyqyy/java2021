@@ -62,14 +62,26 @@ public class LoopDemo {
         System.out.println("100-999之间的水仙花数个数是" + sum);
     }
 
+    // 循环嵌套
+    static void doubleLoop(){
+        for(int hour=0;hour<=23;hour++){
+            for(int minute=0;minute<60;minute++){
+                System.out.println(hour+"时"+minute+"秒");
+            }
+            System.out.println("-------------");
+        }
+    }
+
     public static void main(String[] args) {
-        loopForSum();
-        loopWhileSum();
+//        loopForSum();
+//        loopWhileSum();
+//
+//        System.out.println("===============");
+//
+//        loopForFind();
+//        loopWhileFind();
 
-        System.out.println("===============");
-
-        loopForFind();
-        loopWhileFind();
+        doubleLoop();
 
 
 
