@@ -1,6 +1,6 @@
 package java_06_operation;
 
-public class Demo {
+public class Demo_01 {
 
     static void twoTiger(){
         int x = 10;
