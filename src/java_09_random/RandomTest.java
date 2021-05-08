@@ -1,9 +1,10 @@
 package java_09_random;
+
 import java.util.Random;
 import java.util.Scanner;
 
 public class RandomTest {
-    static void randomtest(){
+    static void randomtest() {
         Random r = new Random();
         Scanner sc = new Scanner(System.in);
         int num = r.nextInt(101);
