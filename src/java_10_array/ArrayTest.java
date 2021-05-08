@@ -40,11 +40,28 @@ public class ArrayTest {
         System.out.println(Arrays.toString(ns));
     }
 
+    // 输出数组的最大值
+    static void printMax(){
+
+        int[] arr = {1,213,45,2,78,6,14,21,51,};
+        int max = arr[0];
+        for(int i=1;i<arr.length;i++){
+            if(max<arr[i]){
+                max = arr[i];
+            }
+
+        }
+
+        System.out.println("数组中最大值是："+max);
+
+    }
+
 
     public static void main(String[] args) {
 //        arraytest();
 //        loopArray();
-        arraysort();
+//        arraysort();
+        printMax();
 
     }
 }
