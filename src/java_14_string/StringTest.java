@@ -1,6 +1,5 @@
 package java_14_string;
 
-
 import java.util.Scanner;
 
 public class StringTest {
@@ -50,8 +49,60 @@ public class StringTest {
         }
     }
 
+    // 字符串遍历
+    public static void printChar(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入字符串:");
+        String s1 = sc.nextLine();
+        for(int i=0;i<s1.length();i++){
+            System.out.println(s1.charAt(i));
+        }
+    }
+
+    // 统计字符串中大小写子母和数字的个数
+    public static void countChar(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入字符串:");
+        String s = sc.nextLine();
+        int bigcount = 0;
+        int smallcount = 0;
+        int numbercount = 0;
+        for (int i=0;i<s.length();i++){
+            char ch = s.charAt(i);
+            if (ch>='A'&&ch<='Z'){
+                bigcount++;
+            } else if(ch>='a'&&ch<='z'){
+                smallcount++;
+            }else if(ch>='0'&&ch<='9'){
+                numbercount++;
+            }
+        }
+
+        System.out.println("字符串"+ s+"中数字个数有:"+numbercount+"个");
+        System.out.println("字符串"+ s+"中大写字母个数有:"+bigcount+"个");
+        System.out.println("字符串"+ s+"中小写字母个数有:"+smallcount+"个");
+
+    }
+
+    //字符串反转
+    public static void reverseString(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入字符串");
+        String s = sc.nextLine();
+        String rs = "";
+        for (int i = s.length()-1;i>=0;i--){
+            rs = rs+s.charAt(i);
+        }
+
+        System.out.println(s+"经过反转后的结果是:" + rs);
+    }
+    
+
     public static void main(String[] args) {
-        compareString();
-        login();
+//        compareString();
+//        login();
+//        printChar();
+//        countChar();
+        reverseString();
     }
 }
