@@ -12,7 +12,7 @@ public class ArrayListTest {
         array.add("world");
         array.add("java");
         System.out.println("array:"+array);
-        
+
         // 在指定索引位置增加元素
         array.add(1,"hhh");
         System.out.println("array:"+array);
@@ -24,6 +24,12 @@ public class ArrayListTest {
         // 修改元素
         array.set(1,"www");
         System.out.println("array"+array);
+
+        // arrayList遍历
+        for(int i=0;i<array.size();i++){
+            String s = array.get(i);
+            System.out.println(s);
+        }
 
 
     }
