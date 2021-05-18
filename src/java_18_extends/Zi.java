@@ -6,9 +6,10 @@ public class Zi extends Fu{
     public int age = 30; // 本类成员变量
 
 
-
+    @Override //注解，检查重写基本语法规则
     public void show() {
         System.out.println("父类show方法被子类重写了，功能改变了");
+        super.show();
     }
 
     public void attribute(){
