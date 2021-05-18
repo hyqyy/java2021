@@ -5,6 +5,16 @@ public class Zi extends Fu{
     public int height = 175;
     public int age = 30; // 本类成员变量
 
+    public Zi() {
+        // super();
+        System.out.println("子类无参构造方法被调用");
+    }
+
+    public Zi(int age) {
+        // super();
+        System.out.println("子类有参构造方法被调用");
+        this.age = age;
+    }
 
     @Override //注解，检查重写基本语法规则
     public void show() {
