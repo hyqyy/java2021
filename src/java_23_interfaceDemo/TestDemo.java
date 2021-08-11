@@ -13,7 +13,26 @@ public class TestDemo {
         System.out.println(pc.getName()+","+pc.getAge());
         pc.eat();
         pc.teach();
-        pc.speak();
+        pc.speak(); // 独有行为,乒乓从业者需要学习英语
+
+        System.out.println("==================");
+
+        BasketballCoach bc = new BasketballCoach("卡尔",54);
+        System.out.println(bc.getName()+","+bc.getAge());
+        bc.eat();
+        bc.teach();
+
+
+        System.out.println("==================");
+
+        PingpongPlayer pp = new PingpongPlayer();
+        pp.setName("马龙");
+        pp.setAge(23);
+        System.out.println(pp.getName()+","+pp.getAge());
+        pp.eat();
+        pp.study();
+        pp.speak(); // 独有行为,乒乓从业者需要学习英语
+
 
         System.out.println("==================");
 
@@ -21,6 +40,7 @@ public class TestDemo {
         System.out.println(bp.getName()+","+bp.getAge());
         bp.eat();
         bp.study();
+
 
     }
 
