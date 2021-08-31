@@ -1,0 +1,3 @@
+className=java_28_annotation.reflexDemo.Teacher
+methodName=teach
+methodParams=老师
